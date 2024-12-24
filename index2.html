@@ -110,7 +110,7 @@
     <section id="contact">
         <div class="section-title">
             <h2>Contact Us</h2>
-        <form class="contact-form">
+        <form id="contact-form">
             <input type="text" id="name" name="name" placeholder="Your Name" required>
             <input type="email" id="email" name="email" placeholder="Your Email" required>
             <textarea id="message" name="message" placeholder="Your Message" rows="4" required></textarea>
@@ -119,7 +119,7 @@
     </div>
     </section>
     <script type="text/javascript">
-        emailjs.init("bc50fIvnkn7m_cb2S"); // Replace with your user ID from EmailJS
+        emailjs.init("elibarikmela"); // Replace with your user ID from EmailJS
     
         document.getElementById('contact-form').addEventListener('submit', function(event) {
             event.preventDefault();
