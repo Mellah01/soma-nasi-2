@@ -12,25 +12,74 @@ header {
     padding: 20px;
     text-align: center;
 }
-
-nav {
-    background-color: #34495e;
-    overflow: hidden;
+.menu-bar 
+{
+    background: #2c3e50;
+    text-align: left;
+    top: 0px;
+    padding: 5px; 
 }
-
-nav a {
-    float: center;
-    display: inline-flex;
-    color: white;
-    text-align: center;
-    padding: 14px 20px;
+.menu-bar ul
+{
+display: inline-flex;
+list-style: none;
+color: #ffffff;
+}
+.menu-bar ul li
+{
+    width: 60px;
+    margin: 20px;
+    padding: 20px;
+}
+.menu-bar ul li a
+{
     text-decoration: none;
+    color: white;
 }
-
-nav a:hover {
-    background-color: #1abc9c;
+.active,.menu-bar ul li:hover
+{
+    background: #2c3e50;
+    border-radius:10px;
 }
-
+.menu-bar .fa
+{
+    margin-right: 8px;
+}
+.sub-menu-1
+{
+    display:none;
+    border-radius:2px;
+}
+.menu-bar ul li:hover .sub-menu-1
+{
+    display: block;
+    position: absolute;
+    background:#525457;
+    margin-top: 5px;
+    margin-left: 0px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul
+{
+    display: block;
+    margin: 5px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li
+{
+    width: 80px;
+    padding:1px ;
+    border-bottom: dotted #a58484;
+    background: transparent;
+    border-radius: 0;
+    text-align: center;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child
+{
+    border-bottom: dotted;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover
+{
+    color: red;
+}
 .hero-section {
     background: url("THINGS/crawler\ \(4\).jpg") no-repeat center center/cover;
     color: white;
@@ -117,28 +166,27 @@ footer a {
 }
 
 footer a:hover {
-    text-decoration: underline;
+    text-decoration: line-through;
 }
-
 .contact-form input, .contact-form textarea {
-    width: 50%;
+    width: 20%;
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 10px;
     font-size: 1em;
 }
 
 .contact-form button {
     background-color: #1abc9c;
-    color: white;
+    color: rgb(23, 82, 105);
     padding: 15px;
-    border: none;
+    border:#34495e;
     font-size: 1.1em;
-    cursor: pointer;
+    cursor: auto;
     width: 20%;
 }
 
 .contact-form button:hover {
-    background-color: #16a085;
+    background-color: #ca2ca8;
 }

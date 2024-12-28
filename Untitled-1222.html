@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        element.style {
+            --menu-height: 0;
+        }
+        nav.elementor-nav-menu--dropdown.elementor-nav-menu__container {
+            color:blue;
+        }
+        nav.elementor-nav-menu--dropdown.elementor-nav-menu__container {
+            font: 20;
+        }
+        .elementor-nav-menu--toggle .elementor-menu-toggle:not(.elementor-active)+.elementor-nav-menu__container {
+            max-height: 0;
+            overflow: hidden;
+            transform: scaleY(0);
+        }
+        .elementor-nav-menu--dropdown.elementor-nav-menu__container {
+            margin-top: 10px;
+            overflow-x: hidden;
+            overflow-y: auto;
+            transform-origin: top;
+            transition: max-height .3s, transform .3s;
+        }
+        .elementor-nav-menu--dropdown {
+            background-color: #fff;
+            font-size: 13px;
+        }
+        .elementor *, .elementor :after, .elementor :before {
+            box-sizing: border-box;
+        }
+        *, :after, :before {
+            box-sizing: border-box;
+        }
+        user agent stylesheet
+        nav {
+            display: block;
+            unicode-bidi: isolate;
+        }
+        .elementor-element, .elementor-lightbox {
+            --swiper-theme-color: #000;
+            --swiper-navigation-size: 44px;
+            --swiper-pagination-bullet-size: 6px;
+            --swiper-pagination-bullet-horizontal-gap: 6px;
+        }
+        .elementor-nav-menu--toggle {
+            --menu-height: 100vh;
+        }
+        .elementor-widget-nav-menu {
+            --e-nav-menu-divider-color: var(--e-global-color-text);
+        }
+        .elementor-element {
+            --widgets-spacing: 20px 20px;
+        }
+        .elementor-element {
+            --flex-direction: initial;
+            --flex-wrap: initial;
+            --justify-content: initial;
+            --align-items: initial;
+            --align-content: initial;
+            --gap: initial;
+            --flex-basis: initial;
+            --flex-grow: initial;
+            --flex-shrink: initial;
+            --order: initial;
+            --align-self: initial;
+            flex-basis: var(--flex-basis);
+            flex-grow: var(--flex-grow);
+            flex-shrink: var(--flex-shrink);
+            order: var(--order);
+            align-self: var(--align-self);
+        }
+        .e-con-full, .e-con>.e-con-inner {
+            text-align: var(--text-align);
+            padding-block-start: var(--padding-block-start);
+            padding-block-end: var(--padding-block-end);
+        }
+        </style>
+</head>
+<body>
+    <div class="elementor-menu-toggle" role="button" tabindex="0" aria-label="Menu Toggle" aria-expanded="false">
+        <i aria-hidden="true" role="presentation" class="elementor-menu-toggle__icon--open eicon-menu-bar"></i><i aria-hidden="true" role="presentation" class="elementor-menu-toggle__icon--close eicon-close"></i>			<span class="elementor-screen-only">Menu</span>
+    </div>
+    <nav aria-label="Menu" class="elementor-nav-menu--main elementor-nav-menu__container elementor-nav-menu--layout-horizontal e--pointer-none">
+        <ul id="menu-1-77670b5" class="elementor-nav-menu" data-smartmenus-id="17352899121437869"><li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-244"><a href="http://thechanzo.com/" aria-current="page" class="elementor-item elementor-item-active">Home</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-246"><a href="https://thechanzo.com/aboutchanzo/" class="elementor-item">About us</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-245"><a href="https://thechanzo.com/contact-us/" class="elementor-item">Contact us</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2181"><a href="https://thechanzo.com/terms-conditions/" class="elementor-item">Terms &amp; Conditions</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2182"><a href="https://thechanzo.com/vigezo-na-masharti/" class="elementor-item">Vigezo na Masharti</a></li>
+</ul>			</nav>
+<div class="elementor-menu-toggle" role="button" tabindex="0" aria-label="Menu Toggle" aria-expanded="false">
+<i aria-hidden="true" role="presentation" class="elementor-menu-toggle__icon--open eicon-menu-bar"></i><i aria-hidden="true" role="presentation" class="elementor-menu-toggle__icon--close eicon-close"></i>			<span class="elementor-screen-only">Menu</span>
+</div>
+<nav class="elementor-nav-menu--dropdown elementor-nav-menu__container" aria-hidden="true" style="--menu-height: 0;">
+<ul id="menu-2-77670b5" class="elementor-nav-menu" data-smartmenus-id="17352899121448398"><li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-244"><a href="http://thechanzo.com/" aria-current="page" class="elementor-item elementor-item-active" tabindex="-1">Home</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-246"><a href="https://thechanzo.com/aboutchanzo/" class="elementor-item" tabindex="-1">About us</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-245"><a href="https://thechanzo.com/contact-us/" class="elementor-item" tabindex="-1">Contact us</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2181"><a href="https://thechanzo.com/terms-conditions/" class="elementor-item" tabindex="-1">Terms &amp; Conditions</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2182"><a href="https://thechanzo.com/vigezo-na-masharti/" class="elementor-item" tabindex="-1">Vigezo na Masharti</a></li>
+</ul>			</nav>
+
+</body>
+</html>
+
+

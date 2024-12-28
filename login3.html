@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+        .login-container {
+            border: 1px solid #ccc;
+            padding: 20px;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+        }
+        button {
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        h2 {
+            text-align: center;
+            text-emphasis: 300;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <input type="text" id="username" placeholder="Username" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+        <div id="error-message" style="color: red; margin-top: 10px;"></div>
+    </div>
+
+    <script>
+        // Array of valid username/password pairs
+        const validCredentials = [
+            { username: "elibarikmela@gmail.com", password: "1234" },
+            { username: "bwirepeter@gmail.com", password: "1234" },
+            { username: "user3", password: "pass3" },
+            { username: "user4", password: "pass4" },
+            { username: "user5", password: "pass5" }
+        ];
+
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the form from submitting traditionally
+            
+            // Get the input values
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            const errorMessage = document.getElementById('error-message');
+
+            // Check if the credentials match
+            const validUser = validCredentials.find(cred => cred.username === username && cred.password === password);
+
+            if (validUser) {
+                // Redirect to another page on successful login
+                window.location.href = 'dashboard3.html'; // Change to your target page
+            } else {
+                errorMessage.textContent = 'Invalid username or password.';
+            }
+        });
+    </script>
+</body>
+</html>
