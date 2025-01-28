@@ -13,29 +13,50 @@
            font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
             color: white;
         }
+        .section-title {
+            text-align: center;
+            font-size: 2em;
+            margin: 50px 0;
+        }
+        .content-section {
+            display: flex;
+            justify-content: space-around;
+            margin: 40px;
+        }
+        .card {
+            background-color: white;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 40%;
+            text-align: center;
+            }
+
+        .card img {
+            width: 100%;
+            border-radius: 8px;
+            height: 200px;
+            }
+
+        .card h3 {
+            margin-top: 15px;
+            font-size: 1.5em;
+            color:black;
+        }
+
+        .card p {
+            margin: 15px 0;
+            color: #555;
+        }
         .container {
             text-align: center;
             padding: 50px;
         }
-
         h1 {
             font-size: 4cm;
             margin-bottom: 20px;
         }
-
-        .author {
-            background-color: rgba(0, 0, 0, 0.6);
-            border-radius: 10px;
-            padding: 20px;
-            margin: 20px auto;
-            max-width: 300px;
-        }
-
-        .author h2 {
-            margin: 0;
-            font-size: 1.8em;
-        }
-
         .social-media {
             margin-top: 10px;
         }
@@ -52,29 +73,42 @@
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1><font color=red>Authors Contacts</font></h1>
-        
-        <div class="author">
-            <h2>BWIRE PETER MAKARO</h2>
-            <p>Email: <FONT COLOR=red>Bwirepeter@gmail.com</FONT></p>
+<section id="courses">
+    <div class="content-section">
+        <div class="card">
+            <a href="kia.html"><img src="civics1.jpg" alt="civics1"></a>
+            <h3>BWIRE PETER MAKARO</h3>
+            <p>Email: <FONT COLOR=red>ceo.somanasiedu@gmail.com</FONT></p>
             <p>Phone: +255 781 117 565</p>
             <p>Phone: +255 745 743625</p>
             <div class="social-media">
-                <a href="https://wa.me/255781117565" target="_blank">whatsapp</a>
-            </div>
+            <a href="https://wa.me/255781117565" target="_blank">whatsapp</a>
         </div>
-        
-        <div class="author">
-            <h2>&nbsp;&nbsp;<img src="20240914_142919.png" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ELIBARIKI TEGEMEO MELA</h2>
-            <p>Email: <font color=red>Elibarikmela@gmail.com</font> </p>
+    </div>
+
+    <div class="content-section">
+        <div class="card">
+            <a href=",oi.html"><img src="civics1.jpg" alt="civics1"></a>
+            <h3>ELIBARIKI TEGEMEO MELA</h3>
+            <p>Email: <font color=red>somanasi01ces@gmail.com</font> </p>
             <p>Phone: +255 675 830 431</p>
             <p>Phone: +255 763 826 898</p>
             <div class="social-media">
-                <a href="https://wa.me/255675830431"target="blank">whatsapp</a>
-            </div>
+            <a href="https://wa.me/255675830431"target="blank">whatsapp</a>
+        </div>
+    </div>   
+
+    <div class="content-section">  
+        <div class="card">
+            <a href="#"><img src="civics1.jpg" alt="civics1"></a>
+            <h3><img src="" >DORICA MASHAURI</h3>
+            <p>Email: <font color=red>Secretary.somanasiedu@gmail.com</font> </p>
+            <p>Phone: +255 788 304 081</p>
+            <div class="social-media">
+            <a href="https://wa.me/255788304081"target="blank">whatsapp</a>
         </div>
     </div>
+</section>
 </body>
 </html>
 
